@@ -1,25 +1,40 @@
-* {
+*{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body {
+body{
+    background-color: gray;
     padding-top: 50px;
 }
 
-.container {
+.conatiner{
+    width: 1300px;
     display: flex;
     align-items: center;
-    
-    justify-content: center;
 }
 
-.container .main-banner{
+.wrapper{
     display: flex;
     align-items: center;
-    flex-direction: column;
-    gap: 20px;
-    width: 1300px;
-    background-color: grey;
+    justify-content: center;
+    background-color: #fff;
+    block-size: 200px;
 }
+
+.wrapper .slider-image{
+    background-color: rgb(224, 224, 224);
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+    
+    }
+
+    .wrapper .slider-image .slider-content .title{
+        font-size: 16px;
+        font-weight: 900;
+    }
+
+    
