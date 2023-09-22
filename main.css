@@ -13,28 +13,38 @@ body{
     width: 1300px;
     display: flex;
     align-items: center;
+  
 }
 
 .wrapper{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #fff;
+    /* background: url(https://newsroom.mobile.de/wp-content/uploads/2023/08/nggallery_import/2_508208892-1024x250.jpg); */
     block-size: 200px;
 }
 
 .wrapper .slider-image{
-    background-color: rgb(224, 224, 224);
+    background-color: rgba(255,255,255 0.5);
     padding-top: 20px;
     display: flex;
     align-items: center;
     padding-bottom: 10px;
-    
+    background: url(https://newsroom.mobile.de/wp-content/uploads/2023/09/nggallery_import/Mob-Ret_23009_Promi-Autos_neu-1024x250.png);
+    padding: 20px 100px;
     }
 
-    .wrapper .slider-image .slider-content .title{
+    .wrapper .slider-image .slider-content {
         font-size: 16px;
         font-weight: 900;
+        background-color: #ffffffb6;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        margin: 0 auto;
+        width: 700px;
+        padding: 30px;border-radius: 15px;
+            
     }
+
 
     
