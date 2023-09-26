@@ -1,41 +1,24 @@
-const slides = document.querySelectorAll('.slide');
-const dots = document.querySelectorAll('.dot');
+// const scrollUp = () => {
+//   const scrollUp = document.getElementById("scroll-up");
+//   this.scrollY >= 300
+//     ? scrollUp.classList.add("show-scroll")
+//     : scrollUp.classList.remove("show-scroll");
+// };
+// window.addEventListener("scroll", scrollUp);
 
-let currentSlide = 0;
+// window.onscroll = function() {
+//   scrollFunction();
+// };
 
-function showSlide(index) {
-  slides.forEach((slide, i) => {
-    if (i === index) {
-      slide.style.transform = 'translateX(0)';
-    } else {
-      slide.style.transform = 'translateX(-100%)';
-    }
-  });
-
-  dots.forEach((dot, i) => {
-    if (i === index) {
-      dot.classList.add('active');
-    } else {
-      dot.classList.remove('active');
-    }
-  });
-}
-
-function changeSlide(index) {
-  currentSlide = index;
-  showSlide(currentSlide);
-}
-
-dots.forEach((dot, i) => {
-  dot.addEventListener('click', () => {
-    changeSlide(i);
-  });
-});
-
-setInterval(() => {
-  currentSlide++;
-  if (currentSlide >= slides.length) {
-    currentSlide = 0;
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("scrollToTopButton").style.display = "block";
+  } else {
+    document.getElementById("scrollToTopButton").style.display = "none";
   }
-  showSlide(currentSlide);
-}, 5000);
+}
+
+function scrollToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
