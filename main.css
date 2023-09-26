@@ -76,12 +76,96 @@ body {
     padding-top: 15px;
 }
 
-.container.stripe .actions {
+#stripe .actions {
     display: flex;
-    margin-top: 15px;
+    margin-top: 40px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    padding-top: 15px;
 }
 
-.stripe{
-    padding-top: 20px;
+#stripe .actions h2 {
+    color: grey;
+}
+
+#btn {
+    outline: none;
+    border: none;
+    background-color: #fff;
+    font-size: 30px;
+    color: #000000;
+    padding-left: 150px;
+    padding-bottom: 15px;
+}
+
+#btn2 {
+    outline: none;
+    border: none;
+    background-color: #fff;
+    font-size: 30px;
+    color: #000000;
+    padding-right: 150px;
+    padding-bottom: 15px;
+}
+
+.cards {
+    padding: 0 150px 20px 150px;
+
+}
+
+.cards .text {
+    padding-top: 15px;
+}
+
+
+.cards .card-wrapper {
+    display: flex;
+    gap: 50px;
+    background-color: #fff;
+    width: 350px;
     align-items: center;
+    justify-content: center;
+}
+
+.cards .card-wrapper .img-block img {
+    width: 350px;
+    padding-bottom: 15px;
+}
+
+.cards .card-wrapper .cards .text {
+    font-size: 15px;
+    padding-left: 15px;
+}
+
+
+.cards .card-wrapper .cards .title {
+    padding-left: 15px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+
+}
+
+.cards .card-wrapper .cards .subtitle {
+    padding-left: 15px;
+    padding-bottom: 10px;
+    display: flex;
+    font-size: 20px;
+  
+  
+}
+
+.cards .card-wrapper .cards .btn{
+    background-color: rgb(190, 125, 4);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    /* display: inline-block; */
+    font-size: 14px;
+    border-radius: 15px;
+    margin-left: 15px;
+    
 }
