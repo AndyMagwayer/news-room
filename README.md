@@ -1,5 +1,5 @@
 # News Room
-![Image alt](https://github.com/{username}/{repository}/raw/{branch}/{path}/image.png)
+![Image alt](https://github.com/AndyMagwayer/news-room/blob/main/Screenshot%202023-09-26%20213246.png)
 News Room is a web application that allows users to read and browse through news articles from different sources. It provides a user-friendly interface and a wide range of news categories to choose from. The application is built using Python and Flask framework.
 
 ## Features
